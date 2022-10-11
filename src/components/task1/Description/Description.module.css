@@ -1,0 +1,29 @@
+.description {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.avatar {
+  margin-top: 50px;
+  width: 150px;
+  height: 150px;
+  border-radius: 100px;
+  border-width: 3px;
+  border-color: black;
+}
+.username {
+  margin-top: 30px;
+  font-size: 30px;
+  font-weight: 700;
+}
+.tag {
+    margin-top: 20px;
+  font-weight: 500;
+  font-size: 25px;
+}
+.location {
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 25px;
+}
