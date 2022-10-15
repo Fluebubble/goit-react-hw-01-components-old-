@@ -1,9 +1,18 @@
-import css from 'components/task2/Item/Item.module.css'
+import css from 'components/task2/Item/Item.module.css';
+import PropTypes from 'prop-types';
 
-export const Item = ({ item: {label, percentage } }) => {
-  <div>
-    tasd
-    {/* <span className={css.label}>{label}asd</span>
-    <span className={percentage}>{percentage}%</span> */}
-  </div>;
+export const Item = ({ item: { label, percentage } }) => {
+  return (
+    <>
+      <span className={css.label}>{label}</span>
+      <span className={css.label}>{percentage}%</span>
+    </>
+  );
 };
+
+Item.propTypes = {
+    item: PropTypes.shape({
+        label: PropTypes.string.isRequired,
+        percentage: PropTypes.number.isRequired
+    })
+}

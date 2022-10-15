@@ -5,6 +5,11 @@ import user from 'components/task1/user.json';
 import { Stats } from 'components/task1/Stats/Stats';
 import { Statistics } from 'components/task2/Statistics/Statistics';
 import data from 'components/task2/data.json'
+import { FriendList } from 'components/task3/FriendList/FriendList';
+import friends from 'components/task3/friends.json';
+import transactions from 'components/task4/transactions.json'
+import { TransactionHistory } from './task4/TransactionHistory/TransactionHistory';
+
 
 export const App = () => {
   return (
@@ -14,6 +19,8 @@ export const App = () => {
         <Stats user={user} />
       </Profile>
       <Statistics data={data} />
+      <FriendList friends={friends}/>
+      <TransactionHistory transactions={transactions}/>
     </>
   );
 };

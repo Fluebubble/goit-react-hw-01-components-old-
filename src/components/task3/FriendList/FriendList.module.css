@@ -1,0 +1,15 @@
+.friendlist {
+    padding: 10px;
+    background-color: rgb(255, 247, 202);
+}
+.item {
+    display: flex;
+    align-items: center;
+    border-width: 1px;
+    border-color: black;
+    background-color: rgb(255, 185, 185);
+    padding: 10px;
+}
+.item:not(:last-child) {
+    margin-bottom: 20px;
+}

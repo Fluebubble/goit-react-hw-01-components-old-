@@ -1,0 +1,27 @@
+.item {
+}
+.status {
+  background-color: rgb(124, 124, 124);
+  height: 20px;
+  width: 20px;
+}
+.name {
+  font-size: 30px;
+}
+.avatar {
+  margin-right: 20px;
+}
+.statusOnline {
+  background-color: rgb(21, 255, 0);
+  height: 20px;
+  width: 20px;
+  border-radius: 30px;
+  margin-right: 20px;
+}
+.statusOffline {
+  background-color: rgb(255, 0, 0);
+  height: 20px;
+  border-radius: 30px;
+  width: 20px;
+  margin-right: 20px;
+}

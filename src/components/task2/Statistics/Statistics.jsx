@@ -5,9 +5,9 @@ export const Statistics = ({ data }) => {
   return (
     <section className={css.statistics}>
       <h2 className={css.title}>Upload stats</h2>
-      <ul className={css.statList}>
+      <ul className={css.statlist}>
         {data.map(item => (
-          <li key={item.id}>
+          <li className={css.statitem} key={item.id}>
             <Item item = {item}/>
           </li>
         ))}
