@@ -3,7 +3,7 @@ import css from 'components/task4/TransactionHistory/TransactionHistory.module.c
 
 export const TransactionHistory = ({transactions}) => {
   return (
-    <table class={css.transactionHistory}>
+    <table className={css.transactionHistory}>
       <thead>
         <tr>
           <th>Type</th>
