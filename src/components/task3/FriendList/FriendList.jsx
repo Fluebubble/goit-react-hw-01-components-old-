@@ -1,5 +1,6 @@
 import css from 'components/task3/FriendList/FriendList.module.css';
 import { Friend } from '../Friend/Friend';
+import PropTypes from 'prop-types';
 
 export const FriendList = ({ friends }) => {
   return (
@@ -12,3 +13,9 @@ export const FriendList = ({ friends }) => {
     </ul>
   );
 };
+
+FriendList.propTypes = {
+  friends: PropTypes.arrayOf(PropTypes.shape({
+    id: PropTypes.number.isRequired
+  }))
+}

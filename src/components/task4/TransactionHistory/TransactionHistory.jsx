@@ -1,5 +1,6 @@
 import { Transaction } from "../Transaction/Transaction";
 import css from 'components/task4/TransactionHistory/TransactionHistory.module.css'
+import PropTypes from 'prop-types';
 
 export const TransactionHistory = ({transactions}) => {
   return (
@@ -25,3 +26,9 @@ export const TransactionHistory = ({transactions}) => {
     </table>
   );
 };
+
+TransactionHistory.propTypes = {
+  transactions: PropTypes.arrayOf(PropTypes.shape({
+    id: PropTypes.string.isRequired
+  }))
+}
